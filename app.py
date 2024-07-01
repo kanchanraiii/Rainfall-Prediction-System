@@ -8,7 +8,7 @@ from streamlit_option_menu import option_menu
 
 # Loading all the models
 working_dir = os.path.dirname(os.path.abspath(__file__))
-rainfall_model = pickle.load(open(f'{working_dir}/Rainfall_Ridge.sav', 'rb'))
+rainfall_model = joblib.load(open(f'{working_dir}/Rainfall_Ridge.sav', 'rb'))
 
 st.set_page_config(
     page_title="Rainfall Prediction App",
