@@ -1,3 +1,5 @@
+pip install streamlit_option_menu
+
 import streamlit as st
 import pickle
 import numpy as np
